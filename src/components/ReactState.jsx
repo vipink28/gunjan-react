@@ -23,12 +23,10 @@ function ReactState() {
     return (
         <div>
             <h3>React State</h3>
-
             <div>
                 <h4>{title}</h4>
 
                 <h4>{sectionTitle}</h4>
-
                 {
                     isVisible ?
                         <p>Summary</p>
