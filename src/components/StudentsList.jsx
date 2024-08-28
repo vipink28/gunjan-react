@@ -29,7 +29,7 @@ function StudentsList(props) {
                     {
                         studentData.map((item, index) => {
                             return (
-                                // <tr key={item.id}>
+                                // <tr className={item.gender === "female" ? "bg-primary" : "bg-secondary"} key={item.id}>
                                 //     <td>{item.id}</td>
                                 //     <td>{item.name}</td>
                                 //     <td>{item.fees}</td>

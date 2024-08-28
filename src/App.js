@@ -1,5 +1,8 @@
 import Child from "./components/Child";
+import Counter from "./components/Counter";
 import Header from "./components/Header";
+import Parent from "./components/Parent";
+import ProductList from "./components/ProductList";
 import ReactProps from "./components/ReactProps";
 import ReactState from "./components/ReactState";
 import StudentsList from "./components/StudentsList";
@@ -11,6 +14,12 @@ function App() {
 
   return (
     <>
+
+      <Counter />
+      <Parent />
+
+      <ProductList />
+
       <Child heading="App Child" color="pink" showHeading={true} />
       <Header />
       <h3>{title}</h3>
