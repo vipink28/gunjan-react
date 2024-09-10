@@ -1,5 +1,6 @@
 import Child from "./components/Child";
 import Counter from "./components/Counter";
+import FormHandling from "./components/FormHandling";
 import Header from "./components/Header";
 import Parent from "./components/Parent";
 import ProductList from "./components/ProductList";
@@ -14,6 +15,8 @@ function App() {
 
   return (
     <>
+
+      <FormHandling />
 
       <Counter />
       <Parent />
