@@ -1,5 +1,6 @@
 import Child from "./components/Child";
 import Counter from "./components/Counter";
+import CounterReducer from "./components/CounterReducer";
 import FormHandling from "./components/FormHandling";
 import Header from "./components/Header";
 import Parent from "./components/Parent";
@@ -7,6 +8,7 @@ import ProductList from "./components/ProductList";
 import ReactProps from "./components/ReactProps";
 import ReactState from "./components/ReactState";
 import StudentsList from "./components/StudentsList";
+import { AppProvider } from "./context/AppContext";
 
 function App() {
 
@@ -16,12 +18,20 @@ function App() {
   return (
     <>
 
-      <FormHandling />
 
-      <Counter />
-      <Parent />
+      <AppProvider>
+        <CounterReducer />
+        <FormHandling />
 
-      <ProductList />
+        <Counter />
+        <Parent />
+
+        <ProductList />
+      </AppProvider>
+
+
+
+
 
       <Child heading="App Child" color="pink" showHeading={true} />
       <Header />

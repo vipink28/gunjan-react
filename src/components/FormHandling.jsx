@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import { DataContext } from '..';
 
 function FormHandling(props) {
+    const data = useContext(DataContext);
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [formData, setFormData] = useState(null);
@@ -13,7 +15,6 @@ function FormHandling(props) {
         let { value } = event.target;
         setLastName(value);
     }
-
 
     const handleChange = (e) => {
         let { value, name } = e.target;
@@ -36,6 +37,7 @@ function FormHandling(props) {
 
     return (
         <div className='container'>
+            <h2>{data}</h2>
             <input type="text" placeholder='First Name' onChange={handleFirstName} />
             <input type="text" placeholder='Last Name' onChange={handleLastName} />
             <p>{firstName}</p>
