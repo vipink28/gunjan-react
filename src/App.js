@@ -8,6 +8,7 @@ import ProductList from "./components/ProductList";
 import ReactProps from "./components/ReactProps";
 import ReactState from "./components/ReactState";
 import StudentsList from "./components/StudentsList";
+import TodoContainer from "./components/TodoContainer";
 import { AppProvider } from "./context/AppContext";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
 
 
       <AppProvider>
+        <TodoContainer />
         <CounterReducer />
         <FormHandling />
 

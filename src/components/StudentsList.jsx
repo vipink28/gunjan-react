@@ -36,7 +36,7 @@ function StudentsList(props) {
                                 //     <td>{item.course}</td>
                                 //     <td>{item.gender}</td>
                                 // </tr>
-                                <TableRow item={item} />
+                                <TableRow key={item.id} item={item} />
                             )
                         })
                     }

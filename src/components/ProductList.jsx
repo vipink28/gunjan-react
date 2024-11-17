@@ -22,7 +22,7 @@ function ProductList(props) {
                 {
                     products.map((item) => {
                         return (
-                            <ProductDetails product={item} addToCart={addToCart} />
+                            <ProductDetails key={item.id} product={item} addToCart={addToCart} />
                         )
                     })
                 }
